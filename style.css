@@ -13,4 +13,65 @@ html {
 body {
   font-size: 1.6rem;
   font-family: "Poppins", sans-serif;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+form {
+  padding: 2rem;
+  background-color: #c2c2c2;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 40rem;
+  width: 40rem;
+}
+
+.form-title {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.form-item {
+  position: relative;
+}
+
+.form-item input {
+  display: inline-block;
+  height: 4rem;
+  width: 100%;
+  margin-bottom: 5rem;
+  border: none;
+  outline: none;
+  background: transparent;
+  border-bottom: 2px solid #fff;
+}
+
+.form-item label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 1.4rem;
+}
+
+.form-item label span {
+  display: inline-block;
+  transition: 0.3s cubic-bezier(.68, -.55, .265, 1.55);
+}
+
+.btn {
+  border: none;
+  outline: none;
+  padding: 2rem 0;
+  font-size: 2rem;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.form-item:hover label span,
+.form-item:focus label span {
+  transform: translateY(-1.3rem);
 }
